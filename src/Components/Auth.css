@@ -1,0 +1,101 @@
+.auth-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-page h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page form div {
+  margin-bottom: 1rem;
+}
+
+.auth-page form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.auth-page form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-page form .password-input-container {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure positioning of the toggle button is relative to this container */
+}
+
+.auth-page form .password-input-container input {
+  flex: 1;
+  padding-right: 2rem; /* Add space for the visibility toggle button */
+}
+
+.auth-page form .toggle-password-btn {
+  position: absolute;
+  right: 0.5rem; /* Adjust as needed */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff; /* Match or adjust the color as needed */
+  transition: color 0.3s;
+}
+
+.auth-page form .toggle-password-btn:hover {
+  color: #0056b3;
+}
+
+.auth-page button[type="submit"] {
+  padding: 0.75rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-page button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.auth-page .social-login {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.auth-page .social-login button {
+  padding: 0.5rem;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-page .social-login button:hover {
+  background: #f1f1f1;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+

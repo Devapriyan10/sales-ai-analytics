@@ -1,0 +1,141 @@
+/* Home.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: #e6ecf0;
+}
+
+.sidebar,
+.main-content,
+.extra-content {
+  padding: 20px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #ffffff;
+  border-right: 1px solid #ccc;
+  position: fixed; /* Fix the sidebar to the left */
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li i {
+  margin-right: 10px;
+}
+
+.sidebar ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.main-content {
+  width: calc(60% - 40px); /* Adjust width and margin */
+  background-color: #d6d4d4e7;
+  margin-left: 20%; /* Make space for the sidebar */
+  margin-right: 20%; /* Make space for the extra content */
+  position: relative;
+  left: 0; /* Remove offset for the fixed sidebar */
+}
+
+.main-content h2 {
+  margin-top: 0;
+}
+
+.extra-content {
+  width: 20%;
+  background-color: #ffffff;
+  border-left: 1px solid #ccc;
+  position: fixed; /* Fix the extra content to the right */
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.extra-content h2 {
+  margin-top: 0;
+}
+
+.extra-content .trends,
+.extra-content .who-to-follow {
+  margin: 20px 0;
+}
+
+.extra-content .trends ul,
+.extra-content .who-to-follow ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-content .trends ul li,
+.extra-content .who-to-follow ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.extra-content .who-to-follow ul li i {
+  margin-right: 10px;
+}
+
+.message-people ul,
+.notifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.message-people ul li,
+.notifications ul li {
+  margin: 10px 0;
+}
+
+.message-box {
+  margin-top: 20px;
+}
+
+.message-box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-box button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1da1f2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
